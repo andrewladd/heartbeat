@@ -1,39 +1,26 @@
-$(document).ready( function () {
+$(document).ready(function () {
+   
+    function makeHeart() {
+        var elem = document.getElementById('doodle'),
+            heartObj = new Two({fullscreen: true}).appendTo(elem),
 
-	$('#heart').click(function() {
-		
-		var heartClass = $('#heart').attr("class");
-		switch(heartClass)
-		{
-		case 'pulse5':
-		 	$('#heart').removeClass('pulse5').addClass("pulse1");
-		 	$('#inner').html("It's Valentines day...");
-		 	break;
+            position = new Two.Vector(heartObj.width / 2, heartObj.height / 2),
 
-		case 'pulse4':
-			$('#heart').removeClass('pulse4').addClass('pulse5');
-			$('#inner').html("with all of my heart.");
-			break;
+            //object placement
+            heartLeft = heartObj.makeCircle(100,100, 48);
+        heartLeft.fill = 'red';
+        heartLeft.noStroke();
 
-		case 'pulse3':
-			$('#heart').removeClass('pulse3').addClass('pulse4');
-			$('#inner').html("that I love you...");
-			break;
+        var heartRight = heartObj.makeCircle(174,100, 48);
+        heartRight.fill = 'red';
+        heartRight.noStroke();
 
-		case 'pulse2':
-			$('#heart').removeClass('pulse2').addClass('pulse3');
-			$('#inner').html("you should know...");
-			break;
+        var heartBottom = heartObj.makePolygon(137,215, 62.5,130, 211.5,130);
+        heartBottom.fill = 'red';
+        heartBottom.noStroke();
 
-		case 'pulse1':
-			$('#heart').removeClass('pulse1').addClass('pulse2');
-			$('#inner').html("so I figured...");
-			break;
-
-		case '':
-			$('#heart').addClass('pulse1');
-			$('#inner').html("It's Valentines day...");
-			break;
-		}
-	});
+        heartObj.update();
+    }
+    
+    makeHeart();
 });
