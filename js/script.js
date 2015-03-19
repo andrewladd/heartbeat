@@ -2,7 +2,13 @@ $(document).ready(function () {
     
     $('#heart').draggable();
     
-	$('#heart').click(function () {
+	});
+});
+
+
+//Message, implementing change in beating speed.
+/*
+$('#heart').click(function () {
 		
 		var heartClass = $('#heart').attr("class");
 		switch (heartClass) {
@@ -36,5 +42,4 @@ $(document).ready(function () {
 			$('#inner').html("It's Valentines day...");
 			break;
 		}
-	});
-});
+*/
