@@ -1,10 +1,8 @@
 $(document).ready(function () {
     
-    $('#heart').draggable();
+    $('#heart').draggable({containment: "#container", scroll: false });
     
-	});
 });
-
 
 //Message, implementing change in beating speed.
 /*

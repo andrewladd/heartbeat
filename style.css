@@ -8,33 +8,42 @@
     margin-left: auto;
 }
 
+/*
 #heading {
     margin-top: 100px;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 50px;
 }
+*/
 
+/*
 #thanks {
     position: relative;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 20px;
     margin-top: 60px;
 }
+*/
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
 #container{
-    width:100%;
-    height:100%;
-    margin:0;
-    background:#FFFFFF
+    background:#FFFFFF;
+    width: inherit;
+    height: inherit;
 }
 
 #heart {
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 160px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 75px;
 }
 
 #heart:before,
@@ -59,7 +68,11 @@
     -webkit-transform-origin: 100% 100%;
 }
 
-#accent {
+#heartText {
+    z-index: 100;
+}
+
+#reflection {
     background-color: white;
     position: relative;
     float: right;
@@ -70,18 +83,6 @@
     z-index: 100;
     box-shadow: 0 0 5px white;
     -webkit-transform: rotate(45deg);
-}
-
-#inner {
-    position: absolute;
-    margin-top: 40%;
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: 'Montserrat', cursive;
 }
 
 .pulse1 {
@@ -114,6 +115,3 @@
  }
 
 }
-
-
-					
