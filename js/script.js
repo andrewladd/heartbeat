@@ -1,6 +1,18 @@
 $(document).ready(function () {
     
+    function displayCoords() {
+        
+        var coords = document.getElementById('heart').getAttribute("style");
+        
+        
+        var placement = document.getElementById('placement');
+        
+        placement.innerHTML = coords + "";
+    }
+    
     $('#heart').draggable({containment: "#container", scroll: false });
+    
+    setInterval(displayCoords, 100);
     
 });
 
