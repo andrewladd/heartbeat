@@ -1,18 +1,20 @@
-$(document).ready(function () {
+$(function () {
+    'use strict';
     
-    function displayCoords() {
-        
-        var coords = document.getElementById('heart').getAttribute("style");
-        
-        
-        var placement = document.getElementById('placement');
-        
-        placement.innerHTML = coords + "";
+    function centerHeart() {
+        var heart = document.getElementById('heart');
+        var h = window.innerHeight/2;
+        var w = window.innerWidth/2 - 80;
+
+        heart.style.top = h + "px";
+        heart.style.left = w + "px";
     }
     
-    $('#heart').draggable({containment: "#container", scroll: false });
-    
-    setInterval(displayCoords, 100);
+    //starts
+    var heart = document.getElementById('heart');
+    $(heart).draggable({containment: "#container", scroll: false });
+    centerHeart();
+    $( "#datepicker" ).datepicker();
     
 });
 

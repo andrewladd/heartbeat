@@ -27,6 +27,7 @@ body, html {
 #heart {
     position: absolute;
     width: 100px;
+    z-index: 50;
     height: 160px;
     margin-left: auto;
     margin-right: auto;
@@ -37,6 +38,7 @@ body, html {
     position: absolute;
     content: "";
     box-shadow: -10px 10px 12px #D1D1E0;
+    z-index: 50;
     left: 50px;
     top: 0;
     width: 100px;
@@ -50,6 +52,7 @@ body, html {
 #heart:after {
     left: -50px;
     box-shadow: 10px 10px 12px #D1D1E0;
+    z-index: 50;
     -webkit-transform: rotate(45deg);
     -webkit-transform-origin: 100% 100%;
 }
