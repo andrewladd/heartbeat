@@ -1,0 +1,66 @@
+#heart {
+    position: relative;
+    width: 100px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13%;
+}
+
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    box-shadow: -3px 3px 5px #D1D1E0;
+    left: 50px;
+    top: 0;
+    width: 100px;
+    height: 160px;
+    background: #FFA3FF;
+
+    -moz-border-radius: 100px 100px 0 0;
+    border-radius: 100px 100px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform: rotate(-45deg);
+    -moz-transform-origin: 0 100%;
+}
+#heart:after {
+    left: -50px;
+    box-shadow: 3px 3px 5px #D1D1E0;
+
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform: rotate(45deg);
+    -moz-transform-origin: 100% 100%;
+}
+
+#shadow {
+width: 130px;
+height: 50px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10%;
+background: #D1D1E0;
+opacity: 0.5;
+box-shadow: 0px 4px 7px 7px #D1D1E0;
+-moz-border-radius: 160px / 50px;
+-webkit-border-radius: 160px / 50px;
+border-radius: 120px / 50px;
+
+
+}
+
+#accent {
+    background-color: white;
+    position: relative;
+    float: right;
+    height: 12px;
+    width: 12px;
+    margin-top: 15px;
+    left: 15px;
+    z-index: 100;
+    box-shadow: 0 0 5px white;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}

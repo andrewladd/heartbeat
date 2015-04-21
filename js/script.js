@@ -1,23 +1,3 @@
-$(function () {
-    'use strict';
-    
-    function centerHeart() {
-        var heart = document.getElementById('heart');
-        var h = window.innerHeight/2;
-        var w = window.innerWidth/2 - 80;
-
-        heart.style.top = h + "px";
-        heart.style.left = w + "px";
-    }
-    
-    //starts
-    var heart = document.getElementById('heart');
-    $(heart).draggable({containment: "#container", scroll: false });
-    centerHeart();
-    $( "#datepicker" ).datepicker();
-    
-});
-
 //Message, implementing change in beating speed.
 /*
 $('#heart').click(function () {
