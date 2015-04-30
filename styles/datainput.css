@@ -23,11 +23,9 @@
 	height: 50px;
 	background-color: grey;
 	display: inline;
-
 	font-size: 50px;
-
-	transition: font-size: 0.35s, width 0.35s, height 0.35s, border 0.35s;
-	-webkit-transition: font-size: 0.35s, width 0.35s, height 0.35s, border 0.35s;
+	transition: font-size 0.35s, width 0.35s, height 0.35s, border 0.35s;
+	-webkit-transition: font-size 0.35s, width 0.35s, height 0.35s, border 0.35s;
 }
 #dateadd:hover {
     border: 4px solid black;

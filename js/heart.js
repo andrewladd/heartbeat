@@ -1,3 +1,27 @@
+//holds each piece of data info
+var Heart = function (date, message) {
+	this.date = date;
+	this.message = message; 
+};
+
+//holds the heart objs
+var HList = [];
+
+//gets called upon pressing of the save button.
+//performs the creating of Heart objs, tending of
+//the HList, and saving data in the cookie. 
+function submitData() {
+	var dateData = $('#datepick').val();
+	var messageData = $('#datemessage').val();
+	
+	if (isEmpty(dateData) || isEmpty(messageData)) {
+		alert("You suck");
+		return false;
+	} else {
+		alert("You don't suck");
+	}
+}
+
 //Message, implementing change in beating speed.
 /*
 $('#heart').click(function () {

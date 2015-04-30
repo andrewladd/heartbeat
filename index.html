@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!---->
-<head>
-	<title>HeartBeat</title>
-
-	<meta charset="UTF-8">
-	<meta name="desciption" content="Feel Upcoming Dates">
-	<meta name="author" content="Andrew Ladd">
-	
-    <!--Fonts-->
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+    <!---->
     
-    <!--CSS-->
-	<link rel="stylesheet" href="styles/structure.css">
-    <link rel="stylesheet" href="styles/visuals.css">
-    <link rel="stylesheet" href="styles/datainput.css">
-
-    <!--JS-->
-	<script type="text/javascript" src="js/script.js"></script>
-</head> 
-<!---->
-<body> 
-    <div id="dateadd" >
-        <p class="textClean center"></p>
-    </div>
-
-    <h1 class="center textFancy">a little heart ...</h1>
-
-    <div id="container"> 
+    <head>
+        <title>HeartBeat</title>
+        <meta charset="UTF-8">
+        <meta name="desciption" content="Feel Upcoming Dates">
+        <meta name="author" content="Andrew Ladd">
+        <link type="image/x-icon" href="img/Capture.png" rel="shortcut icon"></link>
+        <!--Fonts-->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+        <!--JS-->
+        <script src="js/jquery-2.1.3.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/general.js"></script>
+        <script type="text/javascript" src="js/heart.js"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="styles/structure.css">
+        <link rel="stylesheet" href="styles/visuals.css">
+        <link rel="stylesheet" href="styles/datainput.css">
+    </head>
+    <!---->
+    
+    <body>
+        <!-- <div id="dateadd" class="btn btn-default"></div> -->
+        <form>
+            <input type="text" id="datepick" placeholder="MM/DD/YYYY" /> 
+            <input type="text" id="datemessage" placeholder="Date Info" />
+            <input type="submit" value="TROLL" onclick="return submitData()"/>  
+        </form>
         
-        <div id="heart">
-            <div id="accent"></div>
-            <div id="hearttext" class="">-----</div>
+        <h1 class="center textFancy">a little heart ...</h1>
+        <div id="container">
+            <div id="heart">
+                <div id="accent"></div>
+                <div id="hearttext"></div>
+            </div>
+            <div id="shadow"></div>
+            <div id="footer">
+                <p class="center textFancy"><a href="https://github.com/andrewladd" target="_blank">Made with ♥</a></p>
+            </div>
         </div>
+    </body>
+    <!---->
 
-        <div id="shadow"></div>
-
-        <div id="footer">
-            <p class="center textFancy">Made with ♥</p>
-        </div>
-        
-    </div>
-</body>
-<!---->
 </html>

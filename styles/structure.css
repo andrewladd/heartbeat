@@ -1,3 +1,13 @@
+a {
+    color: black;
+}
+a:hover {
+    color: #FFA3FF;
+}
+a:active {
+    color: black;
+}
+
 .textClean {
     font-family: 'Montserrat', sans-serif;
 }
@@ -20,13 +30,13 @@
     font-size: 50px;
 }
 
-#footer {
+#footer {     
     position: fixed;
     bottom: 0;
-    width: 100%;
-    height: 5%;  /*footer height*/
-    min-height: 65px;
-    text-align: center;
+    width: 100%;   
+    height: 5%; /*footer height*/ 
+    min-height: 65px;     
+    text-align: center; 
 }
 
 #container{
